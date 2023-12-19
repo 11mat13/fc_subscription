@@ -400,9 +400,9 @@ T_DjiReturnCode DjiTest_FcSubscriptionGetTotalSatelliteNumber(uint8_t *number)
              s_totalSatelliteNumberUsed = gpsDetails.totalSatelliteNumberUsed;
          }
 
-         dataStructure.sateliteNum.gpsSatelliteNumberUsed = gpsDetails.gpsSatelliteNumberUsed;
-         dataStructure.sateliteNum.glonassSatelliteNumberUsed = gpsDetails.glonassSatelliteNumberUsed;
-         dataStructure.sateliteNum.totalSatelliteNumberUsed =  gpsDetails.totalSatelliteNumberUsed;
+         dataStructure.satelliteNum.gpsSatelliteNumberUsed = gpsDetails.gpsSatelliteNumberUsed;
+         dataStructure.satelliteNum.glonassSatelliteNumberUsed = gpsDetails.glonassSatelliteNumberUsed;
+         dataStructure.satelliteNum.totalSatelliteNumberUsed =  gpsDetails.totalSatelliteNumberUsed;
 
         smartDelay();
      }
@@ -536,7 +536,7 @@ void PMS_Encode(char c)
 char* printData(char* dataString, struct payloadData data){
     sprintf(dataString, "%d-%d-%d %d:%d:%d;", data.date.day, data.date.month, data.date.year, 
                                               data.date.hour, data.date.minute, data.date.second);
-    sprintf(dataString, "%f;%f;%f;%u;%u;%f;%f;%f;%f;%f;-999;%f;%f;%f;%f;%f;%f;%f;%f;%f;-999;-999;\n", data.coordinates.latitude, data.coordinates.longitude, data.coordinates.altitude, data.GPSdataAge, data.sateliteNum.totalSatelliteNumberUsed, data.thermocouple.temperature, data.thermocouple.referenceTemperature, data.bme.temperature, data.bme.humidity, data.bme.pressure, data.pm.PM1, data.pm.PM2_5, data.pm.PM10, data.fr.fr03, data.fr.fr05, data.fr.fr10, data.fr.fr25, data.fr.fr50, data.fr.fr100);
+    sprintf(dataString, "%f;%f;%f;%u;%u;%f;%f;%f;%f;%f;-999;%f;%f;%f;%f;%f;%f;%f;%f;%f;-999;-999;\n", data.coordinates.latitude, data.coordinates.longitude, data.coordinates.altitude, data.GPSdataAge, data.satelliteNum.totalSatelliteNumberUsed, data.thermocouple.temperature, data.thermocouple.referenceTemperature, data.bme.temperature, data.bme.humidity, data.bme.pressure, data.pm.PM1, data.pm.PM2_5, data.pm.PM10, data.fr.fr03, data.fr.fr05, data.fr.fr10, data.fr.fr25, data.fr.fr50, data.fr.fr100);
 
     return dataString;
 }
