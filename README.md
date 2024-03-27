@@ -14,6 +14,15 @@ To replicate my project setup, please use the provided bash script in the aforem
 
 Please note that this repository is not affiliated with DJI, and the modifications are provided "as is" for academic purposes only. Be sure to comply with DJI's licensing terms when using their SDK.
 
+## Acknowledgements and credits
+
+This project utilizes code from several sources. The parts of my project that use modified code from the following sources are acknowledged here:
+
+- **soft_uart** by **Adriano Marto Reis**: A library for software UART implementation. (https://github.com/adrianomarto/soft_uart)
+- **raspberry-pi-bme280** by **Andrei Vainik**: Code for interfacing BME280 sensor with Raspberry Pi. (https://github.com/andreiva/raspberry-pi-bme280/tree/master)
+- **MAX31856 thermocouple** by **scootergarrett** - RaspberryPi Forum user: Source library for MAX31856 thermocouple. (https://forums.raspberrypi.com/viewtopic.php?t=261105)
+- **LED control Raspberry Pi** by **Jeff Tranter**: Demonstrates controlling GPIO for LEDs on a Raspberry Pi. (https://www.ics.com/blog/how-control-gpio-hardware-c-or-c)
+
 ## License:
 
 DJI Publishes their Payload SDK under MIT license.
